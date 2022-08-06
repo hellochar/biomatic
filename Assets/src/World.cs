@@ -30,7 +30,14 @@ public class World {
   }
 
   public bool TakeTurn() {
-    player.position += queuedAction;
+    Vector2Int proposedPosition = player.position + queuedAction;
+    foreach (Tree t in trees) {
+      if (t.position == proposedPosition) {
+        return false;
+      }
+    }
+
+    player.position = proposedPosition;
     queuedAction.Set(0, 0);
 
     bool showPlantSelector = false;

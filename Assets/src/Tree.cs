@@ -6,7 +6,7 @@ public class Tree {
   }
 
   private TreeType treeType;
-  private Vector2Int position;
+  public Vector2Int position;
 
   public Tree(TreeType _type, Vector2Int _position) {
     treeType = _type;
