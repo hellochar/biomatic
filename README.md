@@ -4,7 +4,7 @@
 - [ ] World generation happens
 - [x] Get a player sprite
 - [x] Player has age
-  - [ ] Age is visible to player
+  - [x] Age is visible to player
   - [ ] Tree selection appears when age has run up to limit
 - [ ] Tree selection menu has visible components
 - [ ] Tree selection menu when appears does not permit movement

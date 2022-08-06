@@ -3,13 +3,22 @@ using UnityEngine;
 public class World {
   public static World Main;
 
-  private TileType[,] tiles;
+  public Tile[,] tiles;
   public Player player;
   private Vector2Int queuedAction;
 
+  public int Width => tiles.GetLength(0);
+  public int Height => tiles.GetLength(1);
+
   public World() {
-    tiles = new TileType[36, 11];
     player = new Player(new Vector2Int(0, 5));
+
+    tiles = new Tile[36, 11];
+    for (int x = 0; x < this.Width; x++) {
+      for (int y = 0; y < this.Height; y++) {
+        tiles[x, y] = new Tile(TileType.GROUND, new Vector2Int(x, y));
+      }
+    }
   }
 
   public bool TakeTurn() {
