@@ -5,7 +5,9 @@ public class PlayerController : MonoBehaviour {
 
     private World world => World.Main;
 
-    void Start() {}
+    void Start() {
+        transform.position = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
+    }
 
     void Update() {
         if (world.canTimePass()) {
@@ -18,7 +20,9 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        transform.position = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
+        
+        Vector3 newPos = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
+        transform.position = Vector3.Lerp(transform.position, newPos, 0.25f);
     }
 
     void ShowPlantSelector() {}

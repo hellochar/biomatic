@@ -1,6 +1,6 @@
 # Game Jam - 5 August 2022
 
-- [ ] Get some tiles down
+- [x] Get some tiles down
 - [ ] World generation happens
 - [x] Get a player sprite
 - [x] Player has age
