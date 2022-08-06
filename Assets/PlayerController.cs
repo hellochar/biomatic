@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     void Update() {
-        if (world.canTimePass()) {
+        if (world.CanTimePass()) {
             world.QueueAction(getPlayerInput());
 
             if (world.ShouldTakeTurn()) {

@@ -10,5 +10,5 @@
             <ui:Label text="Needs 10 water to upgrade" display-tooltip-when-elided="true" name="plant-info-needs" style="color: rgb(0, 0, 0); -unity-text-align: upper-left; font-size: 12px; margin-left: 8px; margin-right: 8px; flex-wrap: nowrap; white-space: normal;" />
         </ui:GroupBox>
     </ui:VisualElement>
-    <ui:Button text="Select" display-tooltip-when-elided="true" style="height: 77px; margin-top: 16px; font-size: 30px;" />
+    <ui:Button text="Select" display-tooltip-when-elided="true" name="select-plant-button" style="height: 77px; margin-top: 16px; font-size: 30px;" />
 </ui:UXML>
