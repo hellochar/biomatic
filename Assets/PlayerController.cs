@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour {
+    public TreeSelectionScreenController TreeSelectionScreen;
 
     private World world => World.Main;
 
@@ -25,7 +26,9 @@ public class PlayerController : MonoBehaviour {
         transform.position = Vector3.Lerp(transform.position, newPos, 0.25f);
     }
 
-    void ShowPlantSelector() {}
+    void ShowPlantSelector() {
+        TreeSelectionScreen.Show();
+    }
 
     private Vector2Int getPlayerInput() {
         Vector2Int inputValues = new Vector2Int(0, 0);

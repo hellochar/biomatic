@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:ListView focusable="true" />
+    <ui:Label text="Choose a Plant to Grow" display-tooltip-when-elided="true" style="flex-direction: column; font-size: 40px; -unity-text-align: upper-center; margin-bottom: 20px;" />
+    <ui:VisualElement style="align-items: center;">
+        <ui:GroupBox style="height: 320px; width: 314px; background-color: rgb(126, 217, 152); border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; align-items: stretch; justify-content: flex-start;">
+            <ui:VisualElement style="position: absolute; top: -25px; right: 0; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-1304905567622442630&amp;guid=ac706ab1fc5adb441b097d2919be3ac3&amp;type=3#arrow-down@2x&apos;); width: auto; height: 20px; flex-direction: column; align-items: auto; justify-content: flex-start; left: 0; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Label text="Tree of Life" display-tooltip-when-elided="true" name="plant-info-title" style="color: rgb(0, 0, 0); font-size: 16px; -unity-text-align: upper-center; margin-top: 4px; margin-bottom: 4px;" />
+            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/Sprites/monochrome-transparent_packed.png?fileID=-15317371&amp;guid=6575bb09b1b509941b295b1f4188768a&amp;type=3#tree_of_life&apos;); width: 309px; height: 229px; margin-left: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 4px; -unity-background-scale-mode: scale-to-fit; -unity-background-image-tint-color: rgb(255, 255, 255);" />
+            <ui:Label text="Upgrade to do some stuff." display-tooltip-when-elided="true" name="plant-info-description" style="color: rgb(0, 0, 0); -unity-text-align: upper-left; font-size: 12px; margin-left: 8px; margin-right: 8px; flex-wrap: nowrap; white-space: normal;" />
+            <ui:Label text="Needs 10 water to upgrade" display-tooltip-when-elided="true" name="plant-info-needs" style="color: rgb(0, 0, 0); -unity-text-align: upper-left; font-size: 12px; margin-left: 8px; margin-right: 8px; flex-wrap: nowrap; white-space: normal;" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:Button text="Select" display-tooltip-when-elided="true" style="height: 77px; margin-top: 16px; font-size: 30px;" />
+</ui:UXML>
