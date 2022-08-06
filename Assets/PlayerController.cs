@@ -11,17 +11,20 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (world.canTimePass()) {
-            world.player.position += getPlayerInput();
-            transform.position = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
+            world.QueueAction(getPlayerInput());
 
-            if (world.takeTurn()) {
-                ShowPlantSelector();
+            if (world.ShouldTakeTurn()) {
+                if (world.TakeTurn()) {
+                    ShowPlantSelector();
+                }
             }
         }
+
+        transform.position = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
     }
 
     void ShowPlantSelector() {
-        
+
     }
 
     private Vector2Int getPlayerInput() {

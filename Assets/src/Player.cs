@@ -7,10 +7,10 @@ public class Player {
 
   public Player(Vector2Int initialPosition) {
     position = initialPosition;
-    age = 3;
+    age = 7;
   }
 
   public void Die() {
-    
+
   }
 }
