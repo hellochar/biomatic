@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class World {
   private TileType[,] tiles;
-  private Player player;
+  public Player player;
 
   public World() {
     tiles = new TileType[36, 11];
