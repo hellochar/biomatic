@@ -2,13 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class PlayerController : MonoBehaviour {
-    private World world;
-    // Start is called before the first frame update
-    void Start() {
-        world = new World();
-    }
 
-    // Update is called once per frame
+    private World world => World.Main;
+
+    void Start() {}
+
     void Update() {
         if (world.canTimePass()) {
             world.QueueAction(getPlayerInput());
@@ -23,9 +21,7 @@ public class PlayerController : MonoBehaviour {
         transform.position = new Vector3(world.player.position.x, world.player.position.y, transform.position.z);
     }
 
-    void ShowPlantSelector() {
-
-    }
+    void ShowPlantSelector() {}
 
     private Vector2Int getPlayerInput() {
         Vector2Int inputValues = new Vector2Int(0, 0);

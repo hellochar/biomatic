@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class World {
+  public static World Main;
+
   private TileType[,] tiles;
   public Player player;
   private Vector2Int queuedAction;
