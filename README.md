@@ -2,8 +2,8 @@
 
 - [ ] Get some tiles down
 - [ ] World generation happens
-- [ ] Get a player sprite
-- [ ] Player has age
+- [x] Get a player sprite
+- [x] Player has age
   - [ ] Age is visible to player
   - [ ] Tree selection appears when age has run up to limit
 - [ ] Tree selection menu has visible components
